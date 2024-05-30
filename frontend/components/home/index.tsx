@@ -1,5 +1,7 @@
+"use client";
 import Feed from "./feed";
 import Options from "./options";
+import SigninContainer from "./signin";
 
 const TwitterHome = () => {
   return (
@@ -11,7 +13,9 @@ const TwitterHome = () => {
         <div className="w-2/5 h-screen border-r-[0.5px] border-l-[0.5px] border-gray-600">
           <Feed />
         </div>
-        <div className="w-1/4"></div>
+        <div className="w-1/4 p-4">
+          <SigninContainer />
+        </div>
       </div>
     </>
   );
